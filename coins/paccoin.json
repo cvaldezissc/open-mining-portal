@@ -1,0 +1,6 @@
+{
+    "name": "Paccoin",
+    "symbol": "PAC",
+    "algorithm": "x11",
+    "mposDiffMultiplier": 256
+}
