@@ -1,0 +1,76 @@
+{
+    "enabled": true,
+
+    "coin": "paccoin.json",
+
+    "auxes": [],
+
+    "address": "PFWfpLqe8o1truJcubBmqNaENCsWi9rumd",
+
+    "rewardRecipients": {
+        "PWyz5wPSY5iEF6ZvDrfMbbcGYc1xh1Biti": 0.1,
+		"PFWfpLqe8o1truJcubBmqNaENCsWi9rumd": 30
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 600,
+        "minimumPayment": 100,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 7212,
+            "user": "paccoin2miningpool",
+            "password": "kjhnfuhifh8ki7uh9uhyk3"
+        }
+    },
+
+    "ports": {
+        "7301": {
+            "diff": 8
+        },
+        "7302": {
+            "diff": 0.0001,
+            "varDiff": {
+                "minDiff": 0,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "7304": {
+            "diff": 1024
+        }
+    },
+
+
+
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 7212,
+            "user": "paccoin2miningpool",
+            "password": "kjhnfuhifh8ki7uh9uhyk3"
+        }
+    ],
+
+    "p2p": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 7112,
+        "disableTransactions": false
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "root",
+        "password": "123",
+        "database": "pac",
+        "checkPassword": false,
+        "autoCreateWorker": false
+    }
+
+}
